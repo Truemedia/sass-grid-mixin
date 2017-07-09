@@ -1,0 +1,27 @@
+/**
+  * Grid layout
+  */
+body {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0px; }
+  .content__block {
+    font-size: 64px;
+    font-weight: bold;
+    height: 250px;
+    text-align: center;
+    grid-column-end: span 3; }
+    .content__block:nth-child(odd) {
+      background-color: cornflowerblue;
+      color: navy; }
+    .content__block:nth-child(even) {
+      background-color: navy;
+      color: cornflowerblue; }
+
+/*# sourceMappingURL=app.css.map */

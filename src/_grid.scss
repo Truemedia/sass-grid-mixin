@@ -1,0 +1,10 @@
+/**
+  * Grid layout
+  */
+@mixin grid($columns, $rows) {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    grid-gap: 0px;
+}

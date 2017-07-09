@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+// Mixins
+@import 'grid';
+
+// Grid Layout
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    @include grid(12, 3); // 12 columns, 10 rows
+    &__block {
+        font-size: 64px;
+        font-weight: bold;
+        height: 250px;
+        text-align: center;
+        grid-column-end: span 3;
+        &:nth-child(odd) {
+            background-color: cornflowerblue;
+            color: navy;
+        }
+        &:nth-child(even) {
+            background-color: navy;
+            color: cornflowerblue;
+        }
+    }
+}
